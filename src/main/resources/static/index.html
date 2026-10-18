@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#09090d">
+  <title>ANIME//VERSE — Enter Another World</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="backdrop">
+    <video id="heroVideo" autoplay muted loop playsinline preload="auto">
+      <source src="/video/levi-background.mp4" type="video/mp4">
+    </video>
+    <div class="shade"></div>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">A</span> ANIME<span class="brand-light">//VERSE</span></a>
+    <nav id="navLinks">
+      <a class="active" href="#home">Home</a><a href="#discover">Discover</a><a href="#watchlist">My List</a>
+    </nav>
+    <div class="top-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="Search">⌕</button>
+      <button class="profile" aria-label="Profile">D</button>
+      <button class="menu-btn" id="menuToggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="eyebrow"><span class="live-dot"></span> FEATURED UNIVERSE <span class="eyebrow-line"></span> #01</div>
+      <div class="hero-copy">
+        <p class="series-label">進撃の巨人 · DARK FANTASY</p>
+        <h1>ATTACK<br><span>ON TITAN</span></h1>
+        <div class="meta"><span class="rating">★ 9.1</span><span>2013–2023</span><span>4 Seasons</span><span class="tag">SUB · DUB</span></div>
+        <p class="description">Humanity's last stand begins behind towering walls. When the impossible breaks through, one soldier's world—and the fate of mankind—changes forever.</p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary" id="exploreBtn">▶ &nbsp; Explore series</button>
+          <button class="btn btn-glass" id="listBtn">＋ &nbsp; Add to my list</button>
+        </div>
+        <div class="quick-stats"><div><strong>100+</strong><span>EPISODES</span></div><i></i><div><strong>4K</strong><span>VISUAL WORLD</span></div><i></i><div><strong>∞</strong><span>STORIES</span></div></div>
+      </div>
+      <div class="vertical-label">THE WORLD IS YOURS TO EXPLORE — 01 / 05</div>
+      <button class="sound-toggle" id="videoToggle"><span class="sound-icon">Ⅱ</span><span id="videoToggleText">PAUSE BACKGROUND</span></button>
+    </section>
+
+    <section class="content-section" id="discover">
+      <div class="section-heading"><div><p class="section-kicker">CURATED FOR YOU</p><h2>Choose your next <span>world.</span></h2></div><a href="#allAnime" id="viewAll">VIEW ALL <span>↗</span></a></div>
+      <div class="filter-row" id="filters">
+        <button class="filter active" data-filter="all">All anime</button><button class="filter" data-filter="action">Action</button><button class="filter" data-filter="fantasy">Fantasy</button><button class="filter" data-filter="adventure">Adventure</button><button class="filter" data-filter="drama">Drama</button>
+        <label class="search-box" id="searchBox"><span>⌕</span><input id="animeSearch" placeholder="Search anime..." aria-label="Search anime"></label>
+      </div>
+      <div class="anime-grid" id="animeGrid">
+        <article class="anime-card" data-genre="action drama" data-title="Attack on Titan"><div class="poster poster-aot"><span class="poster-symbol">壁</span><span class="poster-label">HUMANITY'S LAST HOPE</span></div><div class="card-info"><div><h3>Attack on Titan</h3><p>Action · Dark Fantasy</p></div><span class="score">★ 9.1</span></div><button class="card-play" aria-label="View Attack on Titan">↗</button></article>
+        <article class="anime-card" data-genre="action adventure" data-title="Demon Slayer"><div class="poster poster-demon"><span class="poster-symbol">滅</span><span class="poster-label">BLADE OF DESTINY</span></div><div class="card-info"><div><h3>Demon Slayer</h3><p>Action · Adventure</p></div><span class="score">★ 8.7</span></div><button class="card-play" aria-label="View Demon Slayer">↗</button></article>
+        <article class="anime-card" data-genre="adventure fantasy" data-title="One Piece"><div class="poster poster-one"><span class="poster-symbol">海</span><span class="poster-label">FIND THE ONE PIECE</span></div><div class="card-info"><div><h3>One Piece</h3><p>Adventure · Fantasy</p></div><span class="score">★ 9.0</span></div><button class="card-play" aria-label="View One Piece">↗</button></article>
+        <article class="anime-card" data-genre="action fantasy" data-title="Jujutsu Kaisen"><div class="poster poster-jujutsu"><span class="poster-symbol">呪</span><span class="poster-label">CURSES AWAKEN</span></div><div class="card-info"><div><h3>Jujutsu Kaisen</h3><p>Action · Supernatural</p></div><span class="score">★ 8.8</span></div><button class="card-play" aria-label="View Jujutsu Kaisen">↗</button></article>
+        <article class="anime-card" data-genre="drama fantasy" data-title="Your Name"><div class="poster poster-name"><span class="poster-symbol">君</span><span class="poster-label">A THREAD OF FATE</span></div><div class="card-info"><div><h3>Your Name</h3><p>Drama · Romance</p></div><span class="score">★ 8.9</span></div><button class="card-play" aria-label="View Your Name">↗</button></article>
+      </div>
+    </section>
+    <section class="watchlist-section" id="watchlist"><div><p class="section-kicker">YOUR PERSONAL COLLECTION</p><h2>Stories worth <span>keeping.</span></h2><p id="watchlistText">Your list is waiting for its first adventure.</p></div><button class="btn btn-glass" id="watchlistBtn">View my list ↗</button></section>
+    <footer><a class="brand" href="#"><span class="brand-mark">A</span> ANIME<span class="brand-light">//VERSE</span></a><span>MADE FOR THE WORLDS WE LOVE.</span><span>© 2026 ANIME//VERSE</span></footer>
+  </main>
+
+  <dialog id="animeDialog"><button class="dialog-close" id="dialogClose" aria-label="Close">×</button><p class="section-kicker">SERIES PROFILE</p><h2 id="dialogTitle">Attack on Titan</h2><p id="dialogBody">Discover a world of stories.</p><button class="btn btn-primary" id="dialogAdd">＋ Add to my list</button></dialog>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
