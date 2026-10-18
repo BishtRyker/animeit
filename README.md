@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ANIME//VERSE — Java + Spring Boot
 
 A responsive anime discovery landing page using your Levi Ackerman MP4 as the full-screen hero background.
@@ -33,3 +34,6 @@ A responsive anime discovery landing page using your Levi Ackerman MP4 as the fu
 - `src/main/resources/static/video/levi-background.mp4` — supplied background video
 
 Note: Java runs the web server; JavaScript runs browser interactions. Browsers do not execute ordinary Java directly inside HTML pages.
+=======
+hh
+>>>>>>> 249f242c019037a24738afbcadd77d336d0959ce
